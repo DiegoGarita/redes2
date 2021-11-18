@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+  <div class="logo-container">
+    <img class="logo" src="./public/logo mapz.png" alt="">
+  </div>
+
+  <div class="main-container">
+
+    <div>
+
+      <iframe id="paraiso" src="https://www.mapillary.com/embed?image_key=470268374197823&style=split" height="480"
+        width="640" frameborder="0">
+      </iframe>
+
+      <iframe id="cartago" src="https://www.mapillary.com/embed?image_key=768122994072910&style=split" height="480"
+        width="640" frameborder="0">
+      </iframe>
+
+      <iframe id="volcan" src="https://www.mapillary.com/embed?image_key=318947443137800&style=split" height="480"
+        width="640" frameborder="0">
+      </iframe>
+
+    </div>
+
+    <span class="select">
+
+      <select id="locations">
+        <option value="paraiso">Paraiso</option>
+        <option value="cartago">Cartago</option>
+        <option value="volcan">Volcan Irazú</option>
+      </select>
+
+      <img class="drop" src="./public/arrow-down-sign-to-navigate.png" alt="">
+
+      <p class="locationInfo">
+
+        <ul>
+          <h4>ID: </h4><li id="id"></li>
+          <h4>Coordenadas: </h4><li id="coordenadas"></li>
+          <h4>Altura sobre el nivel del mar: </h4><li id="altura"></li>
+          <h4>Ancho de la imagen: </h4><li id="width"></li>
+        </ul>
+
+      </p>
+
+    </span>
+
+  </div>
+
+
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
